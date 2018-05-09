@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="pl.com.kotlewski.kalendarzbiegacza.activities.RaceDetailsActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/nameEdit"
+        android:layout_width="532dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editText3"
+        android:layout_width="55dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="left"
+        android:text="@string/miasto"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/cityEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEdit" />
+
+    <TextView
+        android:id="@+id/cityEdit"
+        android:layout_width="155dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="left"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/editText3"
+        app:layout_constraintTop_toBottomOf="@+id/nameEdit" />
+
+    <TextView
+        android:id="@+id/editText5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="left"
+        android:text="@string/data"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/distanceEdit"
+        app:layout_constraintTop_toBottomOf="@+id/nameEdit" />
+
+    <TextView
+        android:id="@+id/dataEdit"
+        android:layout_width="96dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="left"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/regimenEdit"
+        app:layout_constraintStart_toEndOf="@+id/editText5"
+        app:layout_constraintTop_toBottomOf="@+id/nameEdit" />
+
+    <TextView
+        android:id="@+id/editText7"
+        android:layout_width="72dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="left"
+        android:text="@string/dystans"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/cityEdit"
+        app:layout_constraintTop_toBottomOf="@+id/nameEdit" />
+
+    <TextView
+        android:id="@+id/distanceEdit"
+        android:layout_width="96dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="left"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/editText7"
+        app:layout_constraintTop_toBottomOf="@+id/nameEdit" />
+
+    <TextView
+        android:id="@+id/editText9"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="left"
+        android:text="@string/regulamin"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText7" />
+
+    <TextView
+        android:id="@+id/editText10"
+        android:layout_width="63dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:gravity="left"
+        android:text="@string/strony"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+    <TextView
+        android:id="@+id/regimenEdit"
+        android:layout_width="460dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:autoLink="web"
+        android:ems="10"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dataEdit" />
+
+    <Button
+        android:id="@+id/addRaceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onAddRaceToCalendarClicked"
+        android:text="@string/dodaj_do_kalendarza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/websiteslistView" />
+
+    <ListView
+        android:id="@+id/websiteslistView"
+        android:layout_width="467dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:autoLink="web"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regimenEdit" />
+
+    <Button
+        android:id="@+id/deleteRaceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:enabled="false"
+        android:onClick="onDeleteRaceFromCalendarClicked"
+        android:text="@string/usu_z_kalendarza"
+        app:layout_constraintEnd_toStartOf="@+id/addRaceButton"
+        app:layout_constraintTop_toBottomOf="@+id/websiteslistView" />
+
+
+</android.support.constraint.ConstraintLayout>
+

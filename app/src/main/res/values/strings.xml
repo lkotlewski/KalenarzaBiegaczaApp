@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kalendarz Biegacza</string>
+    <string name="title_activity_show_races">ShowRacesActivity</string>
+    <string name="nazwa">Nazwa:</string>
+    <string name="miasto">Miasto:</string>
+    <string name="data">Data:</string>
+    <string name="dystans">Dystans:</string>
+    <string name="dodaj_do_kalendarza">Dodaj do kalendarza</string>
+    <string name="strony">Strony:</string>
+    <string name="regulamin">Regulamin:</string>
+    <string name="usu_z_kalendarza">USUŃ Z KALENDARZA</string>
+</resources>
